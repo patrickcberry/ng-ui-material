@@ -5,17 +5,27 @@ import { AppRouterModule } from './app-router/app-router.module';
 
 import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
+import { SnavComponent } from './snav/snav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent
+    TestComponent,
+    SnavComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRouterModule
+    AppRouterModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
